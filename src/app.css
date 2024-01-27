@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'Yasmen';
+  src: url('./assets/Yasmen.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'School';
+  src: url('./assets/School.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MyUglyHandwriting';
+  src: url('./assets/MyUglyHandwriting-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Fashion Script';
+  src: url('./assets/Fashion Script.otf') format('opentype');
+}
+
+body {
+  text-align: center;
+  background-color: #edede9;
+}
+
+h1 {
+  font-size: 150px;
+  font-family: 'Yasmen';
+  color: black;
+}
+
+input {
+  padding: 10px;
+  background-color: #f5ebe0;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: #f5ebe0;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+textarea {
+  padding: 10px;
+  background-color: #f5ebe0;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 500px;
+  height: 250px;
+}
+
+.container {
+  background-color: #d5bdaf;
+  padding: 20px;
+  width: fit-content;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+table {
+  width: 500px;
+  align-items: center;
+  text-align: center;
+  font-size: large;
+}
+
+tr {
+  border-top: 1px solid black;
+  cursor: pointer;
+}
+
+tr:hover td:nth-child(1),
+tr:hover td:nth-child(2) {
+  color: white;
+}
+
+th {
+  padding-bottom: 10px;
+}
+
+.symbol {
+  font-family: 'School';
+  font-size: xx-large;
+}
+
+#modifica:hover,
+#elimina:hover {
+  color: white;
+}
+
+h2 {
+  font-family: 'MyUglyHandwriting';
+  padding: 10px;
+  background-color: #f5ebe0;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: start;
+  font-size: xx-large;
+}
+
+h4 {
+  font-family: 'MyUglyHandwriting';
+  font-size: x-large;
+  padding: 10px;
+  background-color: #f5ebe0;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 500px;
+  min-height: 250px;
+  text-align: start;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+#firma {
+  font-family: 'Fashion Script';
+  font-size: xx-large;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #f5ebe0;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: fit-content;
+  text-align: end;
+  margin-left: auto;
+}
+
+h3 {
+  font-size: xx-large;
+}
