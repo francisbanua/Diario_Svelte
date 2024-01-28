@@ -106,6 +106,7 @@ h2 {
   border-radius: 10px;
   text-align: start;
   font-size: xx-large;
+  word-wrap: break-word;
 }
 
 h4 {
@@ -140,4 +141,39 @@ h4 {
 
 h3 {
   font-size: xx-large;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 60px;
+  }
+  
+  table {
+    font-size: small;
+    min-width: 100%;
+  }
+
+  textarea {
+    width: 95%;
+  }
+
+  h3 {
+    font-size: large;
+  }
+
+  #firma {
+    font-size: large;
+  }
+
+  h4 {
+    font-size: small;
+  }
+
+  .symbol {
+    font-size: large;
+  }
+
+  h2 {
+    font-size: large;
+  }
 }
