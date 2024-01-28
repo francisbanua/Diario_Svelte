@@ -29,6 +29,7 @@
     entries = JSON.parse(localStorage.getItem(`diaryEntries${username}`)) || [];
     if(cerca!=''){
      entries = entries.filter(entry => entry.titolo.toLowerCase().includes(cerca.toLowerCase())===true);
+     entries.sort((a,b)=>new Date(b.data)-new Date(a.data));
     }
   }
 
