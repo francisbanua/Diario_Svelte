@@ -20,11 +20,12 @@
   }
 </script>
 
+<center>
 <h1>Visualizza</h1>
-
-<center><div class="container">
+<div class="container">
 <button on:click={home}>Home</button>
 <h2>{titolo}</h2>
 <h4>{testo}</h4>
 <p id="firma"> - {username}, {data}</p>
-</div></center>
+</div>
+</center>

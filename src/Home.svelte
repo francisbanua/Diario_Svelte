@@ -28,7 +28,7 @@
   function ricerca(){
     entries = JSON.parse(localStorage.getItem(`diaryEntries${username}`)) || [];
     if(cerca!=''){
-     entries = entries.filter(entry => entry.title.toLowerCase().includes(cerca.toLowerCase())===true);
+     entries = entries.filter(entry => entry.titolo.toLowerCase().includes(cerca.toLowerCase())===true);
     }
   }
 
@@ -37,20 +37,21 @@
   }
 </script>
 
+<center>
 <h1>{username}'s Home</h1>
 
 <button on:click={logout}>Logout</button>
 <br>
 <br>
-<center><div class="container">
+<div class="container">
 <button on:click={nuovoEntry}>Nuovo</button>
 <input bind:value={cerca} type=text placeholder="Cerca">
-<button on:click={() => ricerca()}>Cerca</button>
-</div></center>
+<button on:click={ricerca}>Cerca</button>
+</div>
 
 <br>
 
-<center><div class="container">
+<div class="container">
 {#if entries.length > 0}
   <table>
     <thead>
@@ -74,4 +75,5 @@
   <h3>:(</h3>
   <p>Clicca su 'Nuovo' per iniziare</p>
 {/if}
-</div></center>
+</div>
+</center>

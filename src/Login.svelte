@@ -21,11 +21,13 @@
   }
 </script>
 
+<center>
 <h1>LOGIN</h1>
 
-<center><div class="container">
+<div class="container">
 <input bind:value={username} type="text" placeholder="Username"/>
 <br>
 <br>
 <button on:click={login}>Login</button>
-</div></center>
+</div>
+</center>

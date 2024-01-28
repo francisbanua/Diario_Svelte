@@ -58,8 +58,9 @@
 
 </script>
 
+<center>
 <h1>Modifica</h1>
-<center><div class="container">
+<div class="container">
 <button on:click={home}>Home</button>
 <br>
 <br>
@@ -71,4 +72,5 @@
 <br>
 <br>
 <button on:click={conferma}>Conferma modifica</button>
-</div></center>
+</div>
+</center>

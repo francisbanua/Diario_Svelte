@@ -46,8 +46,9 @@
   }
 </script>
 
+<center>
 <h1>Nuovo</h1>
-<center><div class="container">
+<div class="container">
 <button on:click={home}>Home</button>
 <br>
 <br>
@@ -59,4 +60,5 @@
 <br>
 <br>
 <button on:click={conferma}>Conferma aggiunta</button>
-</div></center>
+</div>
+</center>
