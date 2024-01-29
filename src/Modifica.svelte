@@ -8,7 +8,7 @@
   let data = '';
   let testo = '';
 
-  let entries = JSON.parse(localStorage.getItem(`diaryEntries${username}`)) || [];
+  let entries = JSON.parse(localStorage.getItem(`diaryEntries${username}`));
   let modificaEntry = entries.find(entry => entry.id == id);
 
   titolo = modificaEntry.titolo;

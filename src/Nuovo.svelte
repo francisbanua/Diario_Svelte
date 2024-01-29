@@ -28,7 +28,7 @@
     entries.push(entry);
     localStorage.setItem(`diaryEntries${username}`, JSON.stringify(entries));
 
-    navigate(`/home/${username}`);
+    home();
   }
 
   function controllo() {

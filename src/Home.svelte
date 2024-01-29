@@ -3,7 +3,7 @@
 
   export let username;
 
-  let entries = JSON.parse(localStorage.getItem('diaryEntries' + username)) || [];
+  let entries = JSON.parse(localStorage.getItem(`diaryEntries${username}`)) || [];
   entries.sort((a,b)=>new Date(b.data)-new Date(a.data));
 
   let cerca='';
